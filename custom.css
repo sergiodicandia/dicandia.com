@@ -58,7 +58,7 @@
   #header .navmenu ul li.active a {
     background: var(--accent-color) !important;
     color: #fff !important;
-    width: 175px !important;
+    width: 210px !important;
     max-width: none !important;
   }
 
@@ -128,7 +128,7 @@
 }
 .stats-item p span {
   display: block !important;
-  font-size: 1.35rem !important;
+  font-size: .8rem !important;
   font-weight: 400 !important;
   color: var(--heading-color) !important;
 }

@@ -9,12 +9,12 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif; 
+  font-family: "Open Sans", sans-serif;
   color: #272829;
 }
 
 a {
-  color: #b4d043;
+  color: #0563bb;
 }
 
 a:hover {
@@ -23,7 +23,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-   font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px;
   right: 15px;
   bottom: 15px;
-  background: #b4d043;
+  background: #0563bb;
   color: #fff;
   transition: display 0.5s ease-in-out;
   z-index: 99999;
@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #b4d043;
+  border: 6px solid #0563bb;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -193,7 +193,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
   color: #fff;
-  background: #b4d043;
+  background: #0563bb;
 }
 
 .nav-menu a:hover span, .nav-menu .active > a span, .nav-menu li:hover > a span {
@@ -238,7 +238,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-active .mobile-nav-toggle i {
-  color: #b4d043;
+  color: #0563bb;
 }
 
 /*--------------------------------------------------------------
@@ -260,9 +260,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-/*  DIK: modificato valore trasparenza immagine di background => solid
-  background: rgba(255, 255, 255, 0.8); */
-  background: rgba(255, 255, 255, 0);
+  background: rgba(255, 255, 255, 0.8);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -271,9 +269,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero h1 {
-/*  DIK: modificato margine per spostare titolo e non impallare logo
-  margin: 0;  */
-  margin-left: 100px;
+  margin: 0;
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
@@ -282,23 +278,18 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero p {
   color: #45505b;
-/*  DIK: modificado margin-left per allineare a h1, aumentato margin-top per abbassare:
-  margin: 15px 0 0 0;  */
-  margin-top: 20px;
-  margin-left: 100px;
+  margin: 15px 0 0 0;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
 }
 
 #hero p span {
-  color: #b4d043;
+  color: #0563bb;
   letter-spacing: 1px;
 }
 
 #hero .social-links {
-/*  DIK: aggiunto margin-left per allineare a h1, portato margin-top da 30 a 50:  */  
-  margin-left: 100px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 #hero .social-links a {
@@ -311,7 +302,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .social-links a:hover {
-  color: #b4d043;
+  color: #0563bb;
 }
 
 @media (max-width: 992px) {
@@ -369,46 +360,10 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #b4d043;
+  background: #0563bb;
   bottom: 0;
   left: calc(50% - 20px);
 }
-
-/*-----------------------------------
- DIK: inserito stile per h4:
------------------------------------*/
-.section-title h4 {
-  font-size: 24px;
-  text-align: center;
-  font-style: italic;
-  margin-bottom: 40px;
-  padding-bottom: 20px;
-  position: relative;
-  color: #45505b;
-}
-
-.section-title h4::before {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 120px;
-  height: 1px;
-  background: #ddd;
-  bottom: 1px;
-  left: calc(50% - 60px);
-}
-
-.section-title h4::after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 40px;
-  height: 3px;
-  background: #b4d043;
-  bottom: 0;
-  left: calc(50% - 20px);
-}
-/*----------------------------------*/
 
 .section-title p {
   margin-bottom: 0;
@@ -435,7 +390,7 @@ section {
 .about .content ul i {
   font-size: 20px;
   padding-right: 2px;
-  color: #b4d043;
+  color: #0563bb;
 }
 
 .about .content p:last-child {
@@ -460,7 +415,7 @@ section {
   left: 50%;
   transform: translateX(-50%);
   font-size: 24px;
-  background: #b4d043;
+  background: #0563bb;
   padding: 12px;
   color: #fff;
   border-radius: 50px;
@@ -481,7 +436,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Skills
+# Akills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 50px;
@@ -512,7 +467,7 @@ section {
   width: 1px;
   height: 10px;
   transition: .9s;
-  background-color: #b4d043;
+  background-color: #0563bb;
 }
 
 /*--------------------------------------------------------------
@@ -529,7 +484,7 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #b4d043;
+  border-left: 2px solid #0563bb;
   position: relative;
 }
 
@@ -539,7 +494,7 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #b4d043;
+  color: #0563bb;
   margin-bottom: 10px;
 }
 
@@ -573,7 +528,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #b4d043;
+  border: 2px solid #0563bb;
 }
 
 /*--------------------------------------------------------------
@@ -607,7 +562,7 @@ section {
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #b4d043;
+  color: #0563bb;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -934,7 +889,7 @@ section {
 }
 
 .testimonials .owl-dot.active {
-  background-color: #b4d043 !important;
+  background-color: #0563bb !important;
 }
 
 @media (min-width: 992px) {
@@ -953,7 +908,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #b4d043;
+  color: #0563bb;
   float: left;
   width: 44px;
   height: 44px;
@@ -985,7 +940,7 @@ section {
 }
 
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #b4d043;
+  background: #0563bb;
   color: #fff;
 }
 
@@ -1063,7 +1018,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #b4d043;
+  background: #0563bb;
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -1121,7 +1076,7 @@ section {
 }
 
 .portfolio-details .portfolio-details-carousel .owl-dot.active {
-  background-color: #b4d043 !important;
+  background-color: #0563bb !important;
 }
 
 .portfolio-details .portfolio-info {
@@ -1189,7 +1144,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #b4d043;
+  background: #0563bb;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
