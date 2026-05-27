@@ -2,184 +2,279 @@
 <html lang="it">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Sergio Dicandia – Facilitatore Digitale per aziende e professionisti</title>
-  <meta name="description" content="Rendo la tecnologia semplice, efficiente e sicura. Consulenza ICT e formazione per aziende, studi professionali e freelance a Milano.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta name="description" content="Rendo la tecnologia semplice, efficiente e sicura. Consulenza ICT e formazione digitale per aziende, studi professionali e freelance a Milano.">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="custom.css" rel="stylesheet">
 </head>
-<body>
 
-<!-- Cookie banner -->
-<div id="cookie-banner">
-  <span>Questo sito usa cookie tecnici necessari al funzionamento. <a href="privacy/">Privacy policy</a></span>
-  <button class="cookie-accept">Accetto</button>
-</div>
+<body class="index-page">
 
-<!-- Mobile toggle -->
-<button class="nav-toggle" aria-label="Menu"><i class="bi bi-list"></i></button>
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
 
-<!-- Overlay mobile -->
-<div class="overlay"></div>
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Sergio Dicandia</h1>
+    </a>
 
-<!-- ===== SIDEBAR ===== -->
-<aside id="sidebar">
-  <div class="profile">
-    <p class="name">Sergio Dicandia</p>
-    <p class="role">Facilitatore Digitale</p>
-    <div class="social">
-      <a href="https://www.linkedin.com/in/sergiodicandia" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-      <a href="mailto:info@dicandia.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
-    </div>
-  </div>
-  <nav>
-    <ul>
-      <li class="active"><a href="index.html"><i class="bi bi-house"></i> Home</a></li>
-      <li><a href="aziende/"><i class="bi bi-building"></i> Per aziende e studi</a></li>
-      <li><a href="professionisti/"><i class="bi bi-person-workspace"></i> Per professionisti</a></li>
-      <li><a href="chi-sono/"><i class="bi bi-person"></i> Chi sono</a></li>
-      <li><a href="contatti/"><i class="bi bi-envelope"></i> Contatti</a></li>
-    </ul>
-  </nav>
-</aside>
-
-<!-- ===== MAIN ===== -->
-<main id="main">
-
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-content" data-aos="fade-up">
-      <h1>Facilitatore Digitale<br><span>per aziende e professionisti</span></h1>
-      <p>Rendo la tecnologia semplice, efficiente e sicura.<br>
-      Aiuto persone e organizzazioni a lavorare meglio, con strumenti che funzionano davvero.</p>
-      <div class="btn-gap">
-        <a href="aziende/" class="btn-p"><i class="bi bi-building me-2"></i>Per aziende e studi</a>
-        <a href="professionisti/" class="btn-w"><i class="bi bi-person-workspace me-2"></i>Per professionisti</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Due percorsi -->
-  <section>
-    <div class="wrap">
-      <div class="section-title" data-aos="fade-up">
-        <h2>Due percorsi, un unico obiettivo</h2>
-        <p>La tecnologia è utile solo se lavora per noi, non contro di noi.<br>
-        <strong>Semplificare per proteggere, proteggere per semplificare.</strong></p>
-      </div>
-      <div class="cta-double" data-aos="fade-up" data-aos-delay="100">
-        <div class="cta-card">
-          <div class="icon"><i class="bi bi-building"></i></div>
-          <h3>Per aziende e studi</h3>
-          <p>Consulenza ICT e supporto continuo per efficienza, sicurezza e continuità del business.</p>
-          <a href="aziende/" class="btn-p">Scopri la consulenza ICT</a>
-        </div>
-        <div class="cta-card">
-          <div class="icon"><i class="bi bi-person-workspace"></i></div>
-          <h3>Per professionisti e freelance</h3>
-          <p>Corsi brevi e concreti su produttività, cloud e protezione dei dati.</p>
-          <a href="professionisti/" class="btn-o">Scopri i corsi</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Perché lavorare con me -->
-  <section class="alt">
-    <div class="wrap">
-      <div class="section-title" data-aos="fade-up">
-        <h2>Perché lavorare con me</h2>
-        <p>Da oltre trent'anni aiuto aziende, team e persone a integrare tecnologia e buon senso. Non porto soluzioni standard: ascolto, analizzo, traduco il linguaggio tecnico in scelte comprensibili e sostenibili.</p>
-      </div>
-      <ul class="list-ok" data-aos="fade-up" data-aos-delay="80">
-        <li>Guardo alla tecnologia come strumento, non come fine</li>
-        <li>Parlo la lingua di chi lavora, non quella dei manuali</li>
-        <li>Trasformo la complessità in processi chiari e sicuri</li>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html" class="active"><i class="bi bi-house navicon"></i><span class="nav-label">Home</span></a></li>
+        <li><a href="aziende/"><i class="bi bi-building navicon"></i><span class="nav-label">Aziende</span></a></li>
+        <li><a href="professionisti/"><i class="bi bi-laptop navicon"></i><span class="nav-label">Professionisti</span></a></li>
+        <li><a href="chi-sono/"><i class="bi bi-person navicon"></i><span class="nav-label">Chi sono</span></a></li>
+        <li><a href="contatti/"><i class="bi bi-envelope navicon"></i><span class="nav-label">Contatti</span></a></li>
       </ul>
-    </div>
-  </section>
+    </nav>
+  </header>
 
-  <!-- Aree di intervento -->
-  <section>
-    <div class="wrap">
-      <div class="section-title" data-aos="fade-up">
+  <main class="main">
+
+    <!-- Hero -->
+    <section id="hero" class="hero section">
+      <img src="assets/img/hero-bg.jpg" alt="">
+      <div class="container" data-aos="zoom-out">
+        <div class="row">
+          <div class="col-lg-6 offset-lg-1">
+            <h2>Sergio Dicandia</h2>
+            <p><span class="typed" data-typed-items="Facilitatore Digitale,Consulente ICT Senior,Formatore Digitale">Facilitatore Digitale</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+            <p class="hero-motto fst-italic mt-4 mb-2">"Complicare è facile, <strong>semplificare</strong> è difficile"<br><small>(Bruno Munari)</small></p>
+            <div class="social-links mt-3 hero-social">
+              <a href="https://www.linkedin.com/in/sergiodicandia" target="_blank"><i class="bi bi-linkedin"></i></a>
+              <a href="mailto:info@dicandia.com"><i class="bi bi-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Due percorsi -->
+    <section id="about" class="about section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Due percorsi, un unico obiettivo</h2>
+        <p>La tecnologia è utile solo se lavora per noi, non contro di noi. Per questo affianco aziende e studi che vogliono semplificare sistemi e processi, e professionisti che desiderano usare in modo più consapevole gli strumenti digitali.<br><br>
+        Due percorsi distinti, la stessa logica: <strong>semplificare per proteggere, proteggere per semplificare.</strong></p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-md-4 d-flex">
+            <div class="cta-card-full d-flex flex-column align-items-center text-center w-100">
+              <i class="bi bi-building mb-3" style="font-size:2rem; color:var(--accent-color)"></i>
+              <h4><strong>Aziende e studi</strong></h4>
+              <p class="flex-grow-1">Consulenza ICT e supporto continuo per efficienza, sicurezza e continuità del business.</p>
+              <a href="aziende/" class="btn-get-started mt-2">Scopri la consulenza</a>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex">
+            <div class="cta-card-full d-flex flex-column align-items-center text-center w-100">
+              <i class="bi bi-laptop mb-3" style="font-size:2rem; color:var(--accent-color)"></i>
+              <h4><strong>Professionisti e freelance</strong></h4>
+              <p class="flex-grow-1">Corsi brevi e concreti su produttività, cloud e protezione dei dati.</p>
+              <a href="professionisti/" class="btn-get-started mt-2">Scopri i corsi</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services section">
+      <div class="container section-title" data-aos="fade-up">
         <h2>Le mie aree di intervento</h2>
+        <p>Tre ambiti integrati per rendere la tecnologia una risorsa, non un problema.</p>
       </div>
-      <div class="grid-3" data-aos="fade-up" data-aos-delay="60">
-        <div class="card-s">
-          <div class="icon"><i class="bi bi-diagram-3"></i></div>
-          <h3>Semplificazione e modern workplace</h3>
-          <p>Analisi e ottimizzazione di strumenti e flussi digitali.</p>
-        </div>
-        <div class="card-s">
-          <div class="icon"><i class="bi bi-shield-check"></i></div>
-          <h3>Protezione e continuità</h3>
-          <p>Revisione sicurezza, gestione dati, prevenzione incidenti.</p>
-        </div>
-        <div class="card-s">
-          <div class="icon"><i class="bi bi-mortarboard"></i></div>
-          <h3>Formazione e cultura digitale</h3>
-          <p>Corsi in pillole per usare la tecnologia in modo consapevole e produttivo.</p>
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item item-cyan position-relative">
+              <div class="icon"><i class="bi bi-diagram-3"></i></div>
+              <h3>Semplificazione e modern workplace</h3>
+              <p>Analisi e ottimizzazione di strumenti e flussi digitali. Meno strumenti, più coerenza nei processi.</p>
+              <a href="aziende/" class="readmore stretched-link">Scopri di più <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item item-orange position-relative">
+              <div class="icon"><i class="bi bi-shield-check"></i></div>
+              <h3>Protezione e continuità</h3>
+              <p>Revisione sicurezza, gestione dati, prevenzione incidenti. Protezione proporzionata, senza burocrazia.</p>
+              <a href="aziende/" class="readmore stretched-link">Scopri di più <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item item-teal position-relative">
+              <div class="icon"><i class="bi bi-mortarboard"></i></div>
+              <h3>Formazione e cultura digitale</h3>
+              <p>Corsi in pillole per usare la tecnologia in modo consapevole e produttivo. Pratici, brevi, senza teoria inutile.</p>
+              <a href="professionisti/" class="readmore stretched-link">Scopri di più <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Numeri -->
-  <section class="alt">
-    <div class="wrap">
-      <div class="section-title" data-aos="fade-up">
+    <!-- Perché lavorare con me -->
+    <section class="resume section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Perché lavorare con me</h2>
+        <p>Da oltre trent'anni aiuto aziende, team e persone a integrare tecnologia e buon senso.<br>
+        Non porto soluzioni standard: ascolto, analizzo, traduco il linguaggio tecnico in scelte comprensibili.</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-md-4 text-center">
+            <i class="bi bi-tools" style="font-size:2rem; color:var(--accent-color)"></i>
+            <h5 class="mt-3">Strumento, non fine</h5>
+            <p>Guardo alla tecnologia come mezzo per lavorare meglio, non come obiettivo in sé.</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <i class="bi bi-chat-square-text" style="font-size:2rem; color:var(--accent-color)"></i>
+            <h5 class="mt-3">La lingua di chi lavora</h5>
+            <p>Parlo la lingua delle persone, non quella dei manuali tecnici e degli acronimi.</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <i class="bi bi-arrow-down-circle" style="font-size:2rem; color:var(--accent-color)"></i>
+            <h5 class="mt-3">Complessità → chiarezza</h5>
+            <p>Trasformo la complessità in processi chiari, sicuri e sostenibili nel tempo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section id="stats" class="stats section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-calendar-check"></i>
+              <span data-purecounter-start="0" data-purecounter-end="38" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>anni di esperienza</strong> <span>nel settore ICT</span></p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-mortarboard"></i>
+              <span data-purecounter-start="0" data-purecounter-end="3600" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>ore di formazione</strong> <span>erogate dal 2016</span></p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-building"></i>
+              <span data-purecounter-start="0" data-purecounter-end="52" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>aziende</strong> <span>e studi seguiti</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Risultati e fiducia -->
+    <section class="about section">
+      <div class="container section-title" data-aos="fade-up">
         <h2>Risultati e fiducia</h2>
-        <p>Ho collaborato con imprese, fondazioni ITS e organizzazioni che volevano rendere la tecnologia una risorsa, non un problema. Ogni progetto parte da una domanda semplice: <strong>«cosa oggi ti fa perdere tempo, dati o serenità?»</strong></p>
       </div>
-      <div class="stats" data-aos="fade-up" data-aos-delay="80">
-        <div class="stat">
-          <div class="num">30+</div>
-          <div class="lbl">anni di esperienza ICT</div>
-        </div>
-        <div class="stat">
-          <div class="num">2000+</div>
-          <div class="lbl">ore di formazione erogate</div>
-        </div>
-        <div class="stat">
-          <div class="num">3</div>
-          <div class="lbl">aree di intervento integrate</div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <p>Ho collaborato con imprese, fondazioni ITS e organizzazioni che volevano rendere la tecnologia una risorsa, non un problema. Ogni progetto parte da una domanda semplice: <em>"cosa oggi ti fa perdere tempo, dati o serenità?"</em></p>
+            <p>Più di 2.000 ore di formazione e decine di interventi ICT hanno un filo comune: rendere le persone autonome e la tecnologia trasparente.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Chi sono – anteprima -->
-  <section>
-    <div class="wrap">
-      <div class="section-title" data-aos="fade-up">
-        <h2>Chi sono</h2>
+    <!-- Contact CTA -->
+    <section id="contact" class="contact section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Parliamoci</h2>
+        <p>Vuoi capire da dove cominciare? Scrivimi o prenota una call conoscitiva di 30 minuti.<br>
+        È gratuita e serve per capire se posso davvero esserti utile.</p>
+        <a href="contatti/" class="btn-get-started mt-3 d-inline-block">Scrivimi o prenota una call</a>
       </div>
-      <div data-aos="fade-up" data-aos-delay="60">
-        <p>Sono <strong>Sergio Dicandia</strong>, consulente ICT senior e facilitatore digitale. Dopo anni in multinazionali e centri servizi, oggi aiuto persone e organizzazioni a ritrovare controllo, semplicità e sicurezza nel loro lavoro digitale.</p>
-        <a href="chi-sono/" class="btn-o" style="margin-top:10px">Leggi la mia storia</a>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-6">
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email</h3>
+                  <p><a href="mailto:info@dicandia.com">info@dicandia.com</a></p>
+                </div>
+              </div>
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-linkedin flex-shrink-0"></i>
+                <div>
+                  <h3>LinkedIn</h3>
+                  <p><a href="https://www.linkedin.com/in/sergiodicandia" target="_blank">linkedin.com/in/sergiodicandia</a></p>
+                </div>
+              </div>
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Dove opero</h3>
+                  <p>Milano e provincia – anche da remoto per tutta Italia</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CTA finale -->
-  <div class="cta-block" data-aos="fade-up">
-    <h2>Vuoi capire da dove cominciare?</h2>
-    <p>Scrivimi o prenota una call conoscitiva di 30 minuti. È gratuita e serve per capire se posso davvero esserti utile.</p>
-    <div class="btn-gap">
-      <a href="contatti/" class="btn-w">Contattami</a>
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© 2025 <strong class="px-1 sitename">Sergio Dicandia</strong> – <a href="privacy/">Privacy Policy</a></p>
+      </div>
     </div>
+  </footer>
+
+  <!-- Cookie Banner -->
+  <div id="cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#040b14;color:#a8a9b4;padding:14px 24px;z-index:9999;font-size:.84rem;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;">
+    <span>Questo sito usa cookie tecnici necessari al funzionamento. <a href="privacy/" style="color:var(--accent-color)">Privacy policy</a></span>
+    <button id="cookie-ok" style="background:var(--accent-color);color:#fff;border:none;padding:8px 18px;border-radius:4px;cursor:pointer;font-size:.83rem;white-space:nowrap;">Accetto</button>
   </div>
 
-</main>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
 
-<a href="#" class="back-to-top" aria-label="Torna in cima"><i class="bi bi-arrow-up"></i></a>
-
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script src="assets/js/main.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    var b = document.getElementById('cookie-banner');
+    if (!localStorage.getItem('sd-cookie')) { b.style.display = 'flex'; }
+    document.getElementById('cookie-ok').onclick = function() {
+      localStorage.setItem('sd-cookie','1'); b.style.display='none';
+    };
+  </script>
 </body>
 </html>

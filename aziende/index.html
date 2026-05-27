@@ -2,195 +2,220 @@
 <html lang="it">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Consulenza ICT per aziende e studi professionali – Sergio Dicandia</title>
-  <meta name="description" content="Semplificazione digitale, sicurezza e continuità operativa per PMI e studi professionali tra 10 e 100 persone. Digital Check-up, percorsi e advisor ICT a Milano.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <meta name="description" content="Digital Check-up ICT, semplificazione digitale e advisor ICT continuativo per PMI e studi professionali. Milano e provincia, anche da remoto.">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/css/main.css" rel="stylesheet">
+  <link href="../custom.css" rel="stylesheet">
 </head>
-<body>
 
-<div id="cookie-banner">
-  <span>Questo sito usa cookie tecnici necessari al funzionamento. <a href="../privacy/">Privacy policy</a></span>
-  <button class="cookie-accept">Accetto</button>
-</div>
+<body class="service-details-page">
 
-<button class="nav-toggle" aria-label="Menu"><i class="bi bi-list"></i></button>
-<div class="overlay"></div>
-
-<aside id="sidebar">
-  <div class="profile">
-    <p class="name">Sergio Dicandia</p>
-    <p class="role">Facilitatore Digitale</p>
-    <div class="social">
-      <a href="https://www.linkedin.com/in/sergiodicandia" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-      <a href="mailto:info@dicandia.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <div class="profile-img">
+      <img src="../assets/img/my-profile-img.jpg" alt="Sergio Dicandia" class="img-fluid rounded-circle">
     </div>
-  </div>
-  <nav>
-    <ul>
-      <li><a href="../"><i class="bi bi-house"></i> Home</a></li>
-      <li class="active"><a href="../aziende/"><i class="bi bi-building"></i> Per aziende e studi</a></li>
-      <li><a href="../professionisti/"><i class="bi bi-person-workspace"></i> Per professionisti</a></li>
-      <li><a href="../chi-sono/"><i class="bi bi-person"></i> Chi sono</a></li>
-      <li><a href="../contatti/"><i class="bi bi-envelope"></i> Contatti</a></li>
-    </ul>
-  </nav>
-</aside>
+    <a href="../" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Sergio Dicandia</h1>
+    </a>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="../"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li><a href="../aziende/" class="active"><i class="bi bi-building navicon"></i><span>Aziende</span></a></li>
+        <li><a href="../professionisti/"><i class="bi bi-laptop navicon"></i><span>Professionisti</span></a></li>
+        <li><a href="../chi-sono/"><i class="bi bi-person navicon"></i><span>Chi sono</span></a></li>
+        <li><a href="../contatti/"><i class="bi bi-envelope navicon"></i><span>Contatti</span></a></li>
+      </ul>
+    </nav>
+  </header>
 
-<main id="main">
+  <main class="main">
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-content" data-aos="fade-up">
-      <h1>Semplificare per proteggere.<br><span>Proteggere per semplificare.</span></h1>
-      <p>Le aziende oggi lavorano con strumenti sempre più complessi, spesso senza una visione d'insieme. Ti aiuto a rimettere ordine, proteggere le informazioni e garantire la continuità del tuo business con un approccio semplice, graduale e sostenibile.</p>
-    </div>
-  </section>
+    <!-- Intro -->
+    <section class="about section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Semplificare per proteggere.<br>Proteggere per semplificare.</h2>
+        <p>Le aziende oggi lavorano con strumenti sempre più complessi, spesso senza una visione d'insieme. Troppi strumenti, troppe procedure, troppe persone che "sanno solo loro come si fa".<br>
+        Il risultato è tempo perso, inefficienze, dati dispersi e rischi nascosti.</p>
+        <p>Ti aiuto a rimettere ordine, proteggere le informazioni e garantire la continuità del tuo business con un approccio semplice, graduale e sostenibile.</p>
+      </div>
+    </section>
 
-  <!-- Servizi -->
-  <section>
-    <div class="wrap">
-      <div class="section-title" data-aos="fade-up">
+    <!-- 3 Servizi -->
+    <section class="services section">
+      <div class="container section-title" data-aos="fade-up">
         <h2>Come posso aiutarti</h2>
       </div>
-      <div class="grid-3" data-aos="fade-up" data-aos-delay="60">
+      <div class="container">
+        <div class="row gy-4">
 
-        <div class="card-s">
-          <span class="bg-num">1</span>
-          <div class="icon"><i class="bi bi-clipboard-pulse"></i></div>
-          <h3>Digital Check-up ICT</h3>
-          <p class="sub">Semplicità e sicurezza in mezza giornata.</p>
-          <p>Un'analisi mirata per capire dove la tecnologia ti fa perdere tempo o mettere a rischio i dati. In poche ore ottieni una fotografia chiara della situazione, con le priorità d'intervento.</p>
-          <div class="output">
-            <strong>Output</strong>
-            Mini-report operativo con punti di forza, criticità e tre azioni consigliate per i prossimi mesi.
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item item-cyan position-relative">
+              <div class="icon"><i class="bi bi-clipboard-pulse"></i></div>
+              <h3>1. Digital Check-up ICT</h3>
+              <p><em>Semplicità e sicurezza in mezza giornata.</em></p>
+              <p>Un'analisi mirata per capire dove la tecnologia ti fa perdere tempo o mettere a rischio i dati. In poche ore ottieni una fotografia chiara della situazione, con le priorità d'intervento per migliorare efficienza e protezione.</p>
+              <p><strong>Output:</strong> mini-report operativo con punti di forza, criticità e tre azioni consigliate per i prossimi mesi.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="card-s">
-          <span class="bg-num">2</span>
-          <div class="icon"><i class="bi bi-arrow-repeat"></i></div>
-          <h3>Percorso di Semplificazione Digitale</h3>
-          <p class="sub">Efficienza, chiarezza e continuità operativa.</p>
-          <p>In 3–6 incontri analizziamo strumenti, flussi e procedure per ridurre caos, ridondanze e complessità inutile. Riorganizziamo l'ambiente digitale rendendolo più coerente, sicuro e facile da mantenere.</p>
-          <div class="output">
-            <strong>Output</strong>
-            Roadmap sintetica, miglioramenti già implementati, piano per la gestione evolutiva.
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item item-orange position-relative">
+              <div class="icon"><i class="bi bi-arrow-repeat"></i></div>
+              <h3>2. Percorso di Semplificazione Digitale</h3>
+              <p><em>Efficienza, chiarezza e continuità operativa.</em></p>
+              <p>In 3–6 incontri analizziamo strumenti, flussi di lavoro e procedure per ridurre caos, ridondanze e complessità inutile. Riorganizziamo l'ambiente digitale rendendolo più coerente, sicuro e facile da mantenere nel tempo.</p>
+              <p><strong>Output:</strong> roadmap sintetica, miglioramenti già implementati, piano per la gestione evolutiva.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="card-s">
-          <span class="bg-num">3</span>
-          <div class="icon"><i class="bi bi-headset"></i></div>
-          <h3>Advisor ICT Continuativo</h3>
-          <p class="sub">Il tuo referente ICT di fiducia, senza dover assumere un IT Manager.</p>
-          <p>Monitoro nel tempo efficienza, sicurezza e continuità del tuo sistema informativo. Supporto decisionale, revisione periodica, mini-audit trimestrali e formazione per il personale.</p>
-          <div class="output">
-            <strong>Output</strong>
-            Audit periodici, aggiornamento policy, riduzione dei punti di vulnerabilità e dei fermi operativi.
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item item-teal position-relative">
+              <div class="icon"><i class="bi bi-headset"></i></div>
+              <h3>3. Advisor ICT Continuativo</h3>
+              <p><em>Il tuo referente ICT di fiducia, senza dover assumere un IT Manager.</em></p>
+              <p>Monitoro nel tempo efficienza, sicurezza e continuità del tuo sistema informativo. Supporto decisionale, revisione periodica delle posture di sicurezza, mini-audit trimestrali e momenti formativi per il personale.</p>
+              <p><strong>Output:</strong> audit periodici, aggiornamento delle policy, riduzione dei punti di vulnerabilità e dei fermi operativi.</p>
+            </div>
           </div>
-        </div>
 
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- A chi è rivolto -->
-  <section class="alt">
-    <div class="wrap">
-      <div class="section-title" data-aos="fade-up">
+    <!-- A chi è rivolto -->
+    <section class="about section light-background">
+      <div class="container section-title" data-aos="fade-up">
         <h2>A chi è rivolto</h2>
       </div>
-      <ul class="target-list" data-aos="fade-up" data-aos-delay="60">
-        <li><i class="bi bi-check-circle-fill"></i>Micro e PMI tra 10 e 100 persone</li>
-        <li><i class="bi bi-check-circle-fill"></i>Studi professionali, agenzie e aziende di servizi</li>
-        <li><i class="bi bi-check-circle-fill"></i>Realtà che non hanno un IT Manager interno, ma vogliono una gestione digitale stabile e sicura</li>
-        <li><i class="bi bi-check-circle-fill"></i>Titolari e responsabili che cercano un interlocutore tecnico affidabile, chiaro e non invasivo</li>
-      </ul>
-    </div>
-  </section>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 content">
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> Micro e PMI tra 10 e 100 persone</li>
+              <li><i class="bi bi-chevron-right"></i> Studi professionali, agenzie e aziende di servizi</li>
+              <li><i class="bi bi-chevron-right"></i> Realtà che non hanno un IT Manager interno, ma vogliono una gestione digitale stabile e sicura</li>
+              <li><i class="bi bi-chevron-right"></i> Titolari e responsabili che cercano un interlocutore tecnico affidabile, chiaro e non invasivo</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Come lavoro -->
-  <section>
-    <div class="wrap">
-      <div class="section-title" data-aos="fade-up">
+    <!-- Come lavoro -->
+    <section class="services section">
+      <div class="container section-title" data-aos="fade-up">
         <h2>Come lavoro</h2>
-        <p>Analizzo prima di agire, ascolto prima di proporre. Tre principi guidano ogni progetto.</p>
+        <p>Analizzo prima di agire, ascolto prima di proporre. Niente slide infinite, niente sigle inutili. Solo azioni concrete e risultati misurabili.</p>
       </div>
-      <div class="steps" data-aos="fade-up" data-aos-delay="60">
-        <div class="step">
-          <div class="step-n">1</div>
-          <div class="step-c">
-            <h4>Semplicità operativa</h4>
-            <p>Meno strumenti, più coerenza nei processi.</p>
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item item-cyan position-relative">
+              <div class="icon"><i class="bi bi-toggles"></i></div>
+              <h3>Semplicità operativa</h3>
+              <p>Meno strumenti, più coerenza nei processi. Parto sempre da ciò che già esiste e funziona.</p>
+            </div>
           </div>
-        </div>
-        <div class="step">
-          <div class="step-n">2</div>
-          <div class="step-c">
-            <h4>Sicurezza pragmatica</h4>
-            <p>Protezione proporzionata, senza burocrazia.</p>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item item-orange position-relative">
+              <div class="icon"><i class="bi bi-shield-check"></i></div>
+              <h3>Sicurezza pragmatica</h3>
+              <p>Protezione proporzionata, senza burocrazia. La sicurezza che serve davvero, integrata nel lavoro quotidiano.</p>
+            </div>
           </div>
-        </div>
-        <div class="step">
-          <div class="step-n">3</div>
-          <div class="step-c">
-            <h4>Continuità del business</h4>
-            <p>Procedure chiare, dati sempre accessibili, nessuna dipendenza critica da singole persone.</p>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item item-teal position-relative">
+              <div class="icon"><i class="bi bi-infinity"></i></div>
+              <h3>Continuità del business</h3>
+              <p>Procedure chiare, dati sempre accessibili, nessuna dipendenza critica da singole persone.</p>
+            </div>
           </div>
         </div>
       </div>
-      <p style="margin-top:24px; font-size:.93rem;">Lavoro con metodo, ma in modo umano: niente slide infinite, niente sigle inutili. Solo azioni concrete e risultati misurabili.</p>
-    </div>
-  </section>
+    </section>
 
-  <!-- Risultati -->
-  <section class="alt">
-    <div class="wrap">
-      <div class="section-title" data-aos="fade-up">
+    <!-- Risultati -->
+    <section class="about section light-background">
+      <div class="container section-title" data-aos="fade-up">
         <h2>Risultati che fanno la differenza</h2>
+        <p>Ogni intervento parte da problemi reali e produce miglioramenti visibili entro poche settimane.</p>
       </div>
-      <div data-aos="fade-up" data-aos-delay="60">
-        <div class="result-item"><i class="bi bi-graph-down-arrow"></i><p>Tempi di intervento IT ridotti fino al 40%</p></div>
-        <div class="result-item"><i class="bi bi-folder-check"></i><p>Minore dispersione di dati e documenti</p></div>
-        <div class="result-item"><i class="bi bi-diagram-2"></i><p>Maggiore chiarezza nei flussi e nei ruoli</p></div>
-        <div class="result-item"><i class="bi bi-emoji-smile"></i><p>Meno stress e più fiducia nelle soluzioni adottate</p></div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 content">
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> Tempi di intervento IT ridotti fino al 40%</li>
+              <li><i class="bi bi-chevron-right"></i> Minore dispersione di dati e documenti</li>
+              <li><i class="bi bi-chevron-right"></i> Maggiore chiarezza nei flussi e nei ruoli</li>
+              <li><i class="bi bi-chevron-right"></i> Meno stress e più fiducia nelle soluzioni adottate</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <p style="margin-top:20px; font-size:.9rem;">Ogni intervento parte da problemi reali e produce miglioramenti visibili entro poche settimane.</p>
-    </div>
-  </section>
+    </section>
 
-  <!-- Perché un facilitatore -->
-  <section>
-    <div class="wrap" data-aos="fade-up">
-      <div class="section-title">
+    <!-- Perché un Facilitatore Digitale -->
+    <section class="resume section">
+      <div class="container section-title" data-aos="fade-up">
         <h2>Perché scegliere un Facilitatore Digitale</h2>
       </div>
-      <p>Un consulente ICT tradizionale risolve problemi tecnici. Un facilitatore digitale aiuta persone e processi a funzionare meglio insieme.</p>
-      <p>La mia esperienza nasce in multinazionali e centri servizi complessi, ma oggi la metto al servizio di realtà più piccole che cercano soluzioni su misura, sostenibili e comprensibili.</p>
-    </div>
-  </section>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <p>Un consulente ICT tradizionale risolve problemi tecnici. Un facilitatore digitale aiuta <strong>persone e processi a funzionare meglio insieme</strong>.</p>
+            <p>La mia esperienza nasce in multinazionali e centri servizi complessi, ma oggi la metto al servizio di realtà più piccole che cercano soluzioni su misura, sostenibili e comprensibili.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- CTA -->
-  <div class="cta-block" data-aos="fade-up">
-    <h2>Vuoi capire da dove cominciare?</h2>
-    <p>Richiedi un <strong style="color:#fff;">Digital Check-up ICT</strong>: in mezza giornata scoprirai cosa puoi migliorare subito e dove serve agire in modo strutturato. Scrivimi per fissare una call conoscitiva di 30 minuti, senza impegno.</p>
-    <div class="btn-gap">
-      <a href="../contatti/" class="btn-w">Richiedi il tuo Check-up</a>
-      <a href="../contatti/" class="btn-o" style="border-color:#fff; color:#fff !important;">Contattami</a>
+    <!-- CTA -->
+    <section class="contact section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Vuoi capire da dove cominciare?</h2>
+        <p>Richiedi un <strong>Digital Check-up ICT</strong>: in mezza giornata scoprirai cosa puoi migliorare subito e dove serve agire in modo strutturato.<br>
+        Scrivimi per fissare una call conoscitiva di 30 minuti, senza impegno.</p>
+        <a href="../contatti/" class="btn-get-started mt-3 d-inline-block">Richiedi il tuo Check-up</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© 2025 <strong class="px-1 sitename">Sergio Dicandia</strong> – <a href="../privacy/">Privacy Policy</a></p>
+      </div>
     </div>
+  </footer>
+
+  <div id="cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#040b14;color:#a8a9b4;padding:14px 24px;z-index:9999;font-size:.84rem;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;">
+    <span>Questo sito usa cookie tecnici necessari al funzionamento. <a href="../privacy/" style="color:var(--accent-color)">Privacy policy</a></span>
+    <button id="cookie-ok" style="background:var(--accent-color);color:#fff;border:none;padding:8px 18px;border-radius:4px;cursor:pointer;font-size:.83rem;">Accetto</button>
   </div>
 
-</main>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
 
-<a href="#" class="back-to-top" aria-label="Torna in cima"><i class="bi bi-arrow-up"></i></a>
-
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script src="../assets/js/main.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script>
+    var b = document.getElementById('cookie-banner');
+    if (!localStorage.getItem('sd-cookie')) { b.style.display = 'flex'; }
+    document.getElementById('cookie-ok').onclick = function() {
+      localStorage.setItem('sd-cookie','1'); b.style.display='none';
+    };
+  </script>
 </body>
 </html>

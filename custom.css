@@ -1,0 +1,193 @@
+/*
+ * custom.css – Sergio Dicandia
+ * Replica il comportamento del vecchio MyResume v2.1.0
+ */
+
+/* ===== SIDEBAR: replica esatta del vecchio nav ===== */
+@media (min-width: 992px) {
+
+  #header.header {
+    width: 80px;
+    overflow: visible;   /* permette l'espansione pill verso destra */
+    justify-content: center;
+    padding: 15px;
+  }
+
+  #main { margin-left: 80px; }
+
+  /* Nasconde nome e social dalla sidebar */
+  .header .sitename { display: none; }
+  .header .logo { display: none; }
+
+  /* Home: sempre verde */
+  #header .navmenu ul li:first-child a {
+    background: var(--accent-color) !important;
+    color: #fff !important;
+  }
+
+  /* Nav item: cerchio 56×56 con sfondo grigio */
+  #header .navmenu ul li a {
+    border-radius: 50px !important;
+    height: 56px !important;
+    width: 56px !important;
+    min-width: 56px !important;
+    padding: 10px 18px !important;
+    background: #f2f3f5 !important;
+    color: #45505b !important;
+    overflow: hidden !important;
+    transition: width 0.3s ease, background 0.3s ease !important;
+    white-space: nowrap !important;
+    margin-bottom: 8px !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  #header .navmenu ul li a i {
+    font-size: 20px !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* Testo: nascosto finché il bottone non si espande */
+  #header .navmenu ul li a > span {
+    display: none !important;
+    padding: 0 5px 0 7px !important;
+  }
+
+  /* Hover e active: verde, espansione a pill, testo visibile */
+  #header .navmenu ul li a:hover,
+  #header .navmenu ul li.active a {
+    background: var(--accent-color) !important;
+    color: #fff !important;
+    width: 175px !important;
+    max-width: none !important;
+  }
+
+  #header .navmenu ul li a:hover > span,
+  #header .navmenu ul li.active a > span {
+    display: inline !important;
+    color: #fff !important;
+  }
+}
+
+/* ===== HERO: replica del vecchio template (CSS background) ===== */
+#hero {
+  background: url('assets/img/hero-bg.jpg') top right no-repeat !important;
+  background-size: cover !important;
+  height: 100vh !important;
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Nasconde il tag <img>: usiamo CSS background */
+#hero > img { display: none !important; }
+
+/* Overlay trasparente come nel vecchio CSS */
+#hero::before { background: rgba(255,255,255,0) !important; }
+
+/* Contenuto: padding uguale al vecchio template */
+#hero .container {
+  position: relative;
+  z-index: 2;
+  padding-left: 180px;
+}
+
+/* Motto: spazio sopra e (Bruno Munari) avvicinato */
+.hero-motto {
+  color: #45505b;
+  font-size: .95rem;
+  line-height: 1.7;
+  margin-top: 3rem !important;
+}
+.hero-motto small {
+  display: block;
+  font-size: .88em;
+  line-height: 1.3;
+  margin-top: .1rem;
+}
+
+/* Social: spazio, colore scuro → verde su hover */
+.hero-social { margin-top: 2.5rem !important; }
+.hero-social a {
+  color: #45505b !important;
+  font-size: 24px;
+  margin-right: 20px;
+  transition: color .3s;
+  text-decoration: none;
+  display: inline-block;
+}
+.hero-social a:hover { color: var(--accent-color) !important; }
+
+/* ===== STATS: prima riga grande, seconda più piccola, entrambe heading-color ===== */
+.stats-item p strong {
+  display: block !important;
+  font-size: 1.35rem !important;
+  font-weight: 700 !important;
+  color: var(--heading-color) !important;
+  line-height: 1.3;
+}
+.stats-item p span {
+  display: block !important;
+  font-size: 1.35rem !important;
+  font-weight: 400 !important;
+  color: var(--heading-color) !important;
+}
+
+/* ===== CTA CARDS ===== */
+.cta-card-full {
+  background: #fff;
+  border: 1px solid #e0e8cc;
+  border-top: 4px solid var(--accent-color);
+  border-radius: 10px;
+  padding: 30px 24px;
+  transition: all .3s;
+}
+.cta-card-full:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+  transform: translateY(-4px);
+}
+.cta-card-full h4 { font-size: 1.05rem; margin-bottom: 12px; color: var(--heading-color); }
+.cta-card-full p { font-size: .9rem; color: var(--default-color); }
+.cta-card-full .btn-get-started { width: 100%; text-align: center; display: block; }
+
+/* ===== btn-get-started ===== */
+.btn-get-started {
+  background: var(--accent-color);
+  color: #fff !important;
+  padding: 10px 26px;
+  border-radius: 5px;
+  font-size: .9rem;
+  font-weight: 600;
+  display: inline-block;
+  transition: background .3s, transform .2s;
+  border: 2px solid var(--accent-color);
+  text-decoration: none;
+}
+.btn-get-started:hover {
+  background: transparent;
+  color: var(--accent-color) !important;
+  transform: translateY(-2px);
+}
+
+/* ===== Form contatto ===== */
+.contact .form-control {
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 10px 14px;
+  font-size: .93rem;
+  font-family: var(--default-font);
+  transition: border-color .3s;
+}
+.contact .form-control:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(180,208,67,.15);
+  outline: none;
+}
+.contact textarea.form-control { min-height: 120px; resize: vertical; }
+.contact label {
+  font-size: .87rem;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-bottom: 5px;
+  display: block;
+}

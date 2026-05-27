@@ -2,220 +2,216 @@
 <html lang="it">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Contatti – Sergio Dicandia, Facilitatore Digitale</title>
   <meta name="description" content="Scrivi a Sergio Dicandia o prenota una call conoscitiva gratuita di 30 minuti. Consulenza ICT e formazione digitale a Milano.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <style>
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 48px;
-      align-items: start;
-    }
-    @media (max-width: 768px) {
-      .contact-grid { grid-template-columns: 1fr; gap: 32px; }
-    }
-    .calendly-note {
-      background: var(--section-alt);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 24px;
-      margin-top: 24px;
-    }
-    .calendly-note h4 { font-size: 1rem; margin-bottom: 8px; }
-    .calendly-note p { font-size: .88rem; margin-bottom: 14px; }
-  </style>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/css/main.css" rel="stylesheet">
+  <link href="../custom.css" rel="stylesheet">
 </head>
-<body>
 
-<div id="cookie-banner">
-  <span>Questo sito usa cookie tecnici necessari al funzionamento. <a href="../privacy/">Privacy policy</a></span>
-  <button class="cookie-accept">Accetto</button>
-</div>
+<body class="contact-page">
 
-<button class="nav-toggle" aria-label="Menu"><i class="bi bi-list"></i></button>
-<div class="overlay"></div>
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <a href="../" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Sergio Dicandia</h1>
+    </a>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="../"><i class="bi bi-house navicon"></i><span class="nav-label">Home</span></a></li>
+        <li><a href="../aziende/"><i class="bi bi-building navicon"></i><span class="nav-label">Aziende</span></a></li>
+        <li><a href="../professionisti/"><i class="bi bi-laptop navicon"></i><span class="nav-label">Professionisti</span></a></li>
+        <li><a href="../chi-sono/"><i class="bi bi-person navicon"></i><span class="nav-label">Chi sono</span></a></li>
+        <li><a href="../contatti/" class="active"><i class="bi bi-envelope navicon"></i><span class="nav-label">Contatti</span></a></li>
+      </ul>
+    </nav>
+  </header>
 
-<aside id="sidebar">
-  <div class="profile">
-    <p class="name">Sergio Dicandia</p>
-    <p class="role">Facilitatore Digitale</p>
-    <div class="social">
-      <a href="https://www.linkedin.com/in/sergiodicandia" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-      <a href="mailto:info@dicandia.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
-    </div>
-  </div>
-  <nav>
-    <ul>
-      <li><a href="../"><i class="bi bi-house"></i> Home</a></li>
-      <li><a href="../aziende/"><i class="bi bi-building"></i> Per aziende e studi</a></li>
-      <li><a href="../professionisti/"><i class="bi bi-person-workspace"></i> Per professionisti</a></li>
-      <li><a href="../chi-sono/"><i class="bi bi-person"></i> Chi sono</a></li>
-      <li class="active"><a href="../contatti/"><i class="bi bi-envelope"></i> Contatti</a></li>
-    </ul>
-  </nav>
-</aside>
+  <main class="main">
 
-<main id="main">
+    <section class="contact section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Parliamoci senza impegno</h2>
+        <p>Vuoi capire da dove cominciare? Scrivimi o prenota una call conoscitiva di 30 minuti.<br>
+        È gratuita e serve per capire se posso davvero esserti utile.</p>
+      </div>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-content" data-aos="fade-up">
-      <h1>Parliamoci<br><span>senza impegno</span></h1>
-      <p>Vuoi capire da dove cominciare? Scrivimi o prenota una call conoscitiva di 30 minuti. È gratuita e serve per capire se posso davvero esserti utile.</p>
-    </div>
-  </section>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
 
-  <!-- Contatti -->
-  <section>
-    <div class="wrap">
-      <div class="contact-grid">
-
-        <!-- Form -->
-        <div data-aos="fade-up">
-          <div class="section-title">
-            <h2>Scrivimi</h2>
-          </div>
-
-          <!--
-            FORMSPREE SETUP:
-            1. Vai su https://formspree.io e crea un account gratuito
-            2. Crea un nuovo form e copia il tuo ID (es. xwkgabcd)
-            3. Sostituisci YOUR_FORM_ID nell'action qui sotto con il tuo ID
-          -->
-          <form
-            action="https://formspree.io/f/YOUR_FORM_ID"
-            method="POST"
-            id="contact-form"
-          >
-            <div class="form-group">
-              <label for="nome">Nome e cognome *</label>
-              <input type="text" id="nome" name="nome" class="form-control" required placeholder="Mario Rossi">
-            </div>
-            <div class="form-group">
-              <label for="email">Email *</label>
-              <input type="email" id="email" name="email" class="form-control" required placeholder="mario@esempio.it">
-            </div>
-            <div class="form-group">
-              <label for="interesse">Mi interessa</label>
-              <select id="interesse" name="interesse" class="form-control">
-                <option value="">– seleziona –</option>
-                <option value="check-up">Digital Check-up ICT</option>
-                <option value="semplificazione">Percorso di Semplificazione</option>
-                <option value="advisor">Advisor ICT Continuativo</option>
-                <option value="corso">Corso per professionisti</option>
-                <option value="team">Percorso per il mio team</option>
-                <option value="altro">Altro / non so ancora</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="messaggio">Messaggio *</label>
-              <textarea id="messaggio" name="messaggio" class="form-control" required placeholder="Descrivimi brevemente la tua situazione o la tua domanda..."></textarea>
-            </div>
-            <div class="form-check">
-              <input type="checkbox" id="gdpr" name="gdpr" required>
-              <label for="gdpr">
-                Ho letto e accetto la <a href="../privacy/">privacy policy</a>. Acconsento al trattamento dei dati personali per rispondere alla mia richiesta. *
-              </label>
-            </div>
-            <!-- Campo honeypot anti-spam -->
-            <input type="text" name="_gotcha" style="display:none">
-            <input type="hidden" name="_subject" value="Nuovo contatto da dicandia.com">
-
-            <button type="submit" class="btn-p">Invia il messaggio</button>
-            <p class="form-msg ok" id="form-ok">Messaggio inviato. Ti rispondo entro 24 ore lavorative.</p>
-            <p class="form-msg err" id="form-err">Si è verificato un errore. Riprova o scrivimi direttamente a <a href="mailto:info@dicandia.com">info@dicandia.com</a>.</p>
-          </form>
-        </div>
-
-        <!-- Info + prenota call -->
-        <div data-aos="fade-up" data-aos-delay="100">
-          <div class="section-title">
-            <h2>Oppure</h2>
-          </div>
-
-          <div class="info-item">
-            <div class="icon-box"><i class="bi bi-envelope"></i></div>
-            <div>
-              <h4>Email</h4>
-              <p><a href="mailto:info@dicandia.com">info@dicandia.com</a></p>
+          <!-- Info contatto -->
+          <div class="col-lg-5">
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email</h3>
+                  <p><a href="mailto:info@dicandia.com">info@dicandia.com</a></p>
+                </div>
+              </div>
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-linkedin flex-shrink-0"></i>
+                <div>
+                  <h3>LinkedIn</h3>
+                  <p><a href="https://www.linkedin.com/in/sergiodicandia" target="_blank">linkedin.com/in/sergiodicandia</a></p>
+                </div>
+              </div>
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Dove opero</h3>
+                  <p>Milano e provincia<br>Anche da remoto per tutta Italia</p>
+                </div>
+              </div>
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+                <i class="bi bi-calendar-check flex-shrink-0"></i>
+                <div>
+                  <h3>Prenota una call</h3>
+                  <p>30 minuti gratuiti per capire da dove partire.<br>
+                  <!--
+                    CALENDLY: sostituisci YOUR-LINK con il tuo link Calendly
+                    es. https://calendly.com/sergiodicandia/30min
+                  -->
+                  <a href="https://calendly.com/YOUR-LINK" target="_blank">Prenota su Calendly →</a></p>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="info-item">
-            <div class="icon-box"><i class="bi bi-linkedin"></i></div>
-            <div>
-              <h4>LinkedIn</h4>
-              <p><a href="https://www.linkedin.com/in/sergiodicandia" target="_blank">linkedin.com/in/sergiodicandia</a></p>
-            </div>
-          </div>
-
-          <div class="info-item">
-            <div class="icon-box"><i class="bi bi-geo-alt"></i></div>
-            <div>
-              <h4>Dove opero</h4>
-              <p>Milano e provincia – anche da remoto per tutta Italia</p>
-            </div>
-          </div>
-
-          <div class="calendly-note">
-            <h4><i class="bi bi-calendar-check" style="color:var(--primary);margin-right:8px;"></i>Prenota una call conoscitiva</h4>
-            <p>30 minuti gratuiti per capire insieme da dove partire. Nessun impegno.</p>
+          <!-- Form Formspree -->
+          <div class="col-lg-7">
             <!--
-              CALENDLY SETUP:
-              1. Vai su https://calendly.com e crea un account gratuito
-              2. Crea un evento da 30 minuti
-              3. Sostituisci il link qui sotto con il tuo link Calendly
+              FORMSPREE SETUP:
+              1. Vai su https://formspree.io – crea account gratuito
+              2. Crea un nuovo form – copia il tuo ID (es. xwkgabcd)
+              3. Sostituisci YOUR_FORM_ID qui sotto con il tuo ID
             -->
-            <a href="https://calendly.com/YOUR-LINK" target="_blank" class="btn-o">Prenota ora</a>
+            <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label for="nome">Nome e cognome *</label>
+                  <input type="text" name="nome" id="nome" class="form-control" placeholder="Mario Rossi" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email">Email *</label>
+                  <input type="email" name="email" id="email" class="form-control" placeholder="mario@esempio.it" required>
+                </div>
+
+                <div class="col-12">
+                  <label for="interesse">Mi interessa</label>
+                  <select name="interesse" id="interesse" class="form-control">
+                    <option value="">– seleziona –</option>
+                    <option value="check-up">Digital Check-up ICT</option>
+                    <option value="semplificazione">Percorso di Semplificazione</option>
+                    <option value="advisor">Advisor ICT Continuativo</option>
+                    <option value="corso">Corso per professionisti</option>
+                    <option value="team">Percorso per il mio team</option>
+                    <option value="altro">Altro / non so ancora</option>
+                  </select>
+                </div>
+
+                <div class="col-12">
+                  <label for="messaggio">Messaggio *</label>
+                  <textarea name="messaggio" id="messaggio" class="form-control" rows="5" placeholder="Descrivimi brevemente la tua situazione o la tua domanda..." required></textarea>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gdpr" name="gdpr" required>
+                    <label class="form-check-label" for="gdpr" style="font-size:.85rem;">
+                      Ho letto e accetto la <a href="../privacy/">privacy policy</a>. Acconsento al trattamento dei dati per rispondere alla mia richiesta. *
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Honeypot anti-spam -->
+                <input type="text" name="_gotcha" style="display:none">
+                <input type="hidden" name="_subject" value="Nuovo contatto da dicandia.com">
+
+                <div class="col-12 text-center">
+                  <button type="submit" class="btn-get-started">Invia il messaggio</button>
+                </div>
+
+                <div class="col-12">
+                  <div id="form-ok" class="alert alert-success mt-3" style="display:none;">
+                    Messaggio inviato. Ti rispondo entro 24 ore lavorative.
+                  </div>
+                  <div id="form-err" class="alert alert-danger mt-3" style="display:none;">
+                    Si è verificato un errore. Riprova o scrivimi direttamente a <a href="mailto:info@dicandia.com">info@dicandia.com</a>.
+                  </div>
+                </div>
+
+              </div>
+            </form>
           </div>
 
         </div>
       </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© 2025 <strong class="px-1 sitename">Sergio Dicandia</strong> – <a href="../privacy/">Privacy Policy</a></p>
+      </div>
     </div>
-  </section>
+  </footer>
 
-</main>
+  <div id="cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#040b14;color:#a8a9b4;padding:14px 24px;z-index:9999;font-size:.84rem;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;">
+    <span>Questo sito usa cookie tecnici necessari al funzionamento. <a href="../privacy/" style="color:var(--accent-color)">Privacy policy</a></span>
+    <button id="cookie-ok" style="background:var(--accent-color);color:#fff;border:none;padding:8px 18px;border-radius:4px;cursor:pointer;font-size:.83rem;">Accetto</button>
+  </div>
 
-<a href="#" class="back-to-top" aria-label="Torna in cima"><i class="bi bi-arrow-up"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
 
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script src="../assets/js/main.js"></script>
-<script>
-  // Gestione risposta Formspree
-  const form = document.getElementById('contact-form');
-  if (form) {
-    form.addEventListener('submit', async function (e) {
-      e.preventDefault();
-      const data = new FormData(form);
-      const ok   = document.getElementById('form-ok');
-      const err  = document.getElementById('form-err');
-      try {
-        const res = await fetch(form.action, {
-          method: 'POST',
-          body: data,
-          headers: { 'Accept': 'application/json' }
-        });
-        if (res.ok) {
-          form.reset();
-          ok.style.display = 'block';
-          err.style.display = 'none';
-        } else {
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script>
+    // Cookie banner
+    var b = document.getElementById('cookie-banner');
+    if (!localStorage.getItem('sd-cookie')) { b.style.display = 'flex'; }
+    document.getElementById('cookie-ok').onclick = function() {
+      localStorage.setItem('sd-cookie','1'); b.style.display='none';
+    };
+    // Form Formspree async
+    var form = document.getElementById('contact-form');
+    if (form) {
+      form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        var ok = document.getElementById('form-ok');
+        var err = document.getElementById('form-err');
+        try {
+          var res = await fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' }
+          });
+          if (res.ok) {
+            form.reset();
+            ok.style.display = 'block';
+            err.style.display = 'none';
+          } else {
+            ok.style.display = 'none';
+            err.style.display = 'block';
+          }
+        } catch(ex) {
           ok.style.display = 'none';
           err.style.display = 'block';
         }
-      } catch {
-        ok.style.display = 'none';
-        err.style.display = 'block';
-      }
-    });
-  }
-</script>
+      });
+    }
+  </script>
 </body>
 </html>
